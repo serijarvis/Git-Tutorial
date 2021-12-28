@@ -1,0 +1,36 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int amount;
+    double balance;
+    cin>>amount;
+    cin>>balance;
+    double rem_balance;
+    // rem_balance=balance-amount-(0.50)
+    if(amount%5==0)
+    {
+        if (balance>=amount+0.50)
+        {
+            rem_balance=balance-amount-(0.50);
+            cout<<rem_balance<<endl;
+        }
+    }
+    
+    else
+    {
+        cout<<balance<<endl;
+    }
+
+    return 0;
+}
