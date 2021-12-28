@@ -1,0 +1,31 @@
+/******************************************************************************
+ * converstion of integer into string 
+ * step1->string stream(string stream)
+ * step2->istringstream(input string stream)
+ * step3->ostringstream(output string stream)
+ * include header file #include<sstream>
+ * take a integral data
+ * declare the output string stream
+ * sending thr integre as a stream
+ * finally declare a string
+
+*******************************************************************************/
+
+#include <iostream>
+#include<sstream>
+
+using namespace std;
+
+int main()
+{
+    int n=342676;
+    ostringstream str1;
+    str1<<n;
+    string s=str1.str();
+    cout<<"ours string is"<<s<<endl;
+    cout<<s[0]<<endl;
+    cout<<s[1]<<endl;
+    
+    
+}
+
