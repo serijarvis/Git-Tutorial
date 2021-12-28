@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    int p;
+    p=78;
+    char x=(char)p;
+    cout<<x<<endl;
+    return 0;
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    int p=90;
+    char x=(char)p;
+    cout<<x<<endl;
+}
+/*converstion from char to int */
+
+
+
