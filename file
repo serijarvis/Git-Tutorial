@@ -1,0 +1,9 @@
+f=open('sample.txt')
+data=f.readline()
+print(data)
+data=f.readline()
+print(data)
+f.close()
+
+harry is a very goood boy
+he is very good guy
