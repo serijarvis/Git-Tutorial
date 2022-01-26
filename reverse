@@ -1,0 +1,5 @@
+num=int(input("enter the number"))
+i=10
+while i>0:
+    print(num*i)
+    i=i-1
