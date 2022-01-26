@@ -1,0 +1,14 @@
+favdict={
+
+}
+a=input("enter your fav language shubham")
+b=input("enter your fav language ankita")
+c=input("enter your fav language sonali")
+d=input("enter your fav language rohit")
+favdict['shubham']=a
+favdict['ankita']=b
+favdict['sonali']=c
+favdict['rohit']=d
+
+
+print(favdict)
