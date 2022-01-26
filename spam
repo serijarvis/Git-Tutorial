@@ -1,0 +1,16 @@
+text=input("enter your text")
+spam=False
+if("make money" in text):
+    spam=True;
+if("make money fast" in text):
+    spam=True;
+
+if("click me" in text):
+    spam=True;
+
+if("make money through online" in text):
+    spam=True;
+if(spam):
+    print("this is a spam")
+else:
+    print("this is not spam")
