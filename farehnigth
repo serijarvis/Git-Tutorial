@@ -1,0 +1,5 @@
+def farh(cel):
+    return (cel*(4/5))+32
+C=90
+f=farh(C)
+print("farhheit temperuare is "+str(f))
