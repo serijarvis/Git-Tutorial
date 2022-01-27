@@ -1,0 +1,35 @@
+class Employee:
+    company="bharat gas"
+    salary=5000
+    salary_bonus=900
+    # total_salary=5500
+
+
+    @property
+    def total_salary(self):
+        return self.salary+self.salary_bonus
+
+e=Employee()
+print(e.total_salary)
+
+
+@@@@@@@@@@@@@@@@@@@@class Employee:
+    company="bharat gas"
+    salary=5000
+    salary_bonus=900
+    # total_salary=5500
+
+
+    @property
+    def total_salary(self):
+        return self.salary+self.salary_bonus
+
+
+    @total_salary.setter
+    def total_salary(self,val):
+        self.salary_bonus=val-self.salary
+e=Employee()
+print(e.total_salary)
+e.total_salary=7000
+print(e.salary)
+print(e.salary_bonus)
