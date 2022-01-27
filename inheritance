@@ -1,0 +1,69 @@
+class Employee:
+    company="amazon"
+    def showdetails(self):
+        print("this is an employee working in amazon")
+class Programmer(Employee):
+    langauage="java"
+    def showdetails(self):
+        print("this is an programmer working in youtube")
+    def status(self):
+        print(f"this is a language is {self.langauage}")
+
+################
+
+arun=Employee()
+rohit=Programmer()
+rohit.showdetails()
+arun.showdetails()
+rohit.status()
+# arun.status()
+
+
+class Freelancer:
+    company="fiver"
+    level=10
+    def details(self):
+        print(f"the company name is {self.company}")
+        ################
+        class Freelancer:
+    company="fiver"
+    level=10
+    def details(self):
+        print(f"the company name is {self.company}")
+
+class Employee:
+    company="flipkart"
+    ecode=102
+    def details(self):
+        print(f"the company name is {self.company}  ")
+
+
+class Programmer(Freelancer,Employee):
+    name="rohit"
+
+
+e=Employee()
+p=Programmer()
+# print(p.company())
+# print(e.company())
+# p.details1()
+p.details()
+e.details()
+
+
+@##@############
+class Employee:
+    company="visa"
+    ecode=102
+class freelancer:
+    company="flipkart"
+    level=0
+
+    def upgradelevel(self):
+        self.level = self.level + 1
+class Programmer(Employee,freelancer):
+    name="rohit"
+p=Programmer()
+p.upgradelevel()
+print(p.level)
+print(p.company)
