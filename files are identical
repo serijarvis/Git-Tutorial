@@ -1,0 +1,37 @@
+file1="copy.txt"
+file2="that.txt"
+with open(file1) as f:
+    f1=f.read()
+with open(file2) as f:
+    f2=f.read()
+if f1==f2:
+    print("files are identical")
+else:
+    print("files are not identical")
+    
+    
+    
+   @wipe out to any program
+   filename="sample1.txt"
+with open(filename,"w") as f:
+    f.write("")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @rename a file
+    import os
+old_name="sample2.txt"
+new_name="renamed_by_python.txt"
+with open(old_name) as f:
+    content=f.read()
+with open(new_name,"w")  as f:
+    f.write(content)
+os.remove(old_name)
