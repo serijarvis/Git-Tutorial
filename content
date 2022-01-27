@@ -1,0 +1,27 @@
+with open("sample1.txt")  as f:
+    content=f.read()
+
+content=content.replace("donkey","@#@$@$@$$")
+with open("sample1.txt","w") as f:
+    f.write(content)
+    
+   with open(
+im your best friebds @#@$@$@$$
+@#@$@$@$$
+@#@$@$@$$
+
+
+words=["donkey","kaddu","mote"]
+with open("py.txt") as f:
+    content=f.read()
+for word in words:
+    content=content.replace(word,"@#@##$")
+with open("py.txt","w") as f:
+    f.write(content)
+    
+    
+    @#@##$
+
+@#@##$
+@#@##$ ho gye ho aap
+im bahut smart @#@##$
