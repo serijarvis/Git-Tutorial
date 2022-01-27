@@ -1,0 +1,19 @@
+class Employee:
+    company="microsoft"
+    salary=100
+    location="delhi"
+
+
+    def changeSalary(self,sal):
+        self__class__salary=sal
+
+    @classmethod
+    def changesalary(cls,sal):
+        cls.salary=990
+
+
+# Employee.salary=500
+e=Employee()
+print(e.salary)
+e.changeSalary(888)
+print(Employee.salary)
