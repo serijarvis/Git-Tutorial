@@ -1,0 +1,29 @@
+class Person:
+    country="india"
+    def breath(self):
+        print("i am a person so i ma breathing")
+class Employee(Person):
+    company="Youtube"
+    def getsalary(self):
+        print(f"salary is {self.getsalary}")
+    def breath(self):
+        print("i am an Employee so i am also breathing")
+class Programmer(Employee):
+    company="amazon"
+
+    def getsalary(self):
+        print("programmer willl not get salary")
+    def breath(self):
+        print("i am a progrMERE so i ma breathing ++")
+
+
+
+p=Person()
+
+e=Employee()
+pr=Programmer()
+p.breath()
+e.breath()
+print(pr.company)
+pr.breath()
+print(pr.country)
