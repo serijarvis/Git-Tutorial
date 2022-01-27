@@ -1,0 +1,42 @@
+class Employee:
+    company="Google"
+    def getSalary(self):
+        print(f"salary for this compnay working in {self.company} is {self.salary}")
+    @staticmethod
+    def greet():
+        print("good morning sir!")
+    def __init__(self,name,salary,address):
+        self.name=name
+        self.salary=salary
+        self.address=address
+        print("harry is created")
+    def printDetails(self):
+        print(f"the name of the person is {self.name} and salary is {self.salary} and addres is {self.address}")
+
+    @staticmethod
+    def time():
+        print("the time is 9am in the morning")
+harry=Employee("harry",10200,"burnpur station road")
+divya=Employee("divya",1080,"asansol station road")
+
+print(harry.printDetails())
+harry.printDetails()
+divya.printDetails()
+@################@
+class Programmer:
+    company="microsoft"
+    def __init__(self,name,product,salary):
+        self.name = name
+        self.product = product
+        self.salary=salary
+    def printdetails(self):
+        print(f"the name of the programmer is {self.name} and product is {self.product} and salary is {self.salary}")
+
+
+
+harry=Programmer("harry","edge",5678)
+divya=Programmer("divya","skype",3456)
+harry.printdetails()
+divya.printdetails()
+
+
