@@ -1,0 +1,56 @@
+
+class Train:
+    def __init__(self,name,fare,seats):
+        self.name=name
+        self.fare=fare
+        self.seats=seats
+    def printdeatails(self):
+        print(f"the train name is {self.name}" )
+
+    def fareinfo(self):
+        print(f"the fare of the train is {self.fare}")
+    def getstatus(self):
+        print(f"the seats of the train is {self.seats}")
+    def booktickest(self):
+        if(self.seats>0):
+            print(f"your seats has been book and your seat no is {self.seats}")
+            self.seats=self.seats-1
+        else:
+            print("!sorry no seats is available")
+intercity=Train("intercity:12304",340,2)
+
+
+#
+# intercity.printdeatails()
+# intercity.fareinfo()
+# print(intercity.printdeatails())
+intercity.getstatus()
+intercity.booktickest()
+intercity.getstatus()
+intercity.getstatus()
+intercity.booktickest()
+
+intercity.getstatus()
+intercity.booktickest()
+
+
+
+
+
+
+
+##output
+the seats of the train is 2
+your seats has been book and your seat no is 2
+the seats of the train is 1
+the seats of the train is 1
+your seats has been book and your seat no is 1
+the seats of the train is 0
+!sorry no seats is available
+@@#$#$
+class Sample:
+    def __init__(harry,name):
+        harry.name=name
+
+obj=Sample("harry")
+print(obj.name)
