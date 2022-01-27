@@ -1,0 +1,54 @@
+class Calculator:
+    def __init__(self,num):
+        self.num=num
+    def square(self):
+        print(f"the square of the number is is {self.num**2}")
+    def squareRoot(self):
+        print(f"the squareRoot of the number is is {self.num ** 0.5}")
+    def cube(self):
+        print(f"the square of the number is {self.num ** 3}")
+
+a=Calculator(3)
+a.square()
+a.squareRoot()
+a.cube()
+
+
+
+@@@###class attribute change nhi hota hai
+class Sample:
+    a="harry" #class attribute hai
+obj=Sample()
+obj.a="vicjt" #instance attribute hai
+
+print(Sample.a)
+print(obj.a)
+
+class Sample:
+    a="harry" #class attribute hai
+obj=Sample()
+Sample.a="vicjt" #instance attribute hai
+
+print(Sample.a)
+print(obj.a)
+###static method
+class Calculator:
+    def __init__(self,num):
+        self.num=num
+    def square(self):
+        print(f"the square of the number is is {self.num**2}")
+    def squareRoot(self):
+        print(f"the squareRoot of the number is is {self.num ** 0.5}")
+    def cube(self):
+        print(f"the square of the number is {self.num ** 3}")
+    @staticmethod
+    def greet():
+        print("hello guys gd morning")
+
+
+a=Calculator(3)
+a.square()
+a.squareRoot()
+a.cube()
+a.greet()
+
