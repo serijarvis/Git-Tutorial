@@ -1,0 +1,77 @@
+class Person:
+    country="india"
+    def __init__(self):
+        print("im initialinzing person")
+    def breath(self):
+        print("i am a person so i ma breathing")
+class Employee(Person):
+    company="Youtube"
+    def __init__(self):
+        super().__init__()
+        print("im initialinzing Employeee")
+    def getsalary(self):
+
+        print(f"salary is {self.getsalary}")
+    def breath(self):
+        super().breath()
+        print("i am an Employee so i am also breathing")
+class Programmer(Employee):
+    company="amazon"
+    def __init__(self):
+        super().__init__()
+        print("im initialinzing Programmer")
+
+    def getsalary(self):
+        print("programmer willl not get salary")
+    def breath(self):
+        super().breath()
+        print("i am a progrMERE so i ma breathing ++")
+
+
+
+p=Person()
+p.breath()
+e=Employee()
+e.breath()
+pr=Programmer()
+pr.breath()
+@################
+class Person:
+    country="india"
+    def __init__(self):
+        print("im initialinzing person")
+    def breath(self):
+        print("i am a person so i ma breathing")
+class Employee(Person):
+    company="Youtube"
+    def __init__(self):
+        super().__init__()
+        print("im initialinzing Employeee")
+    def getsalary(self):
+
+        print(f"salary is {self.getsalary}")
+    def breath(self):
+        super().breath()
+        print("i am an Employee so i am also breathing")
+class Programmer(Employee):
+    company="amazon"
+    def __init__(self):
+        # super().__init__()
+        print("im initialinzing Programmer")
+
+    def getsalary(self):
+        print("programmer willl not get salary")
+    def breath(self):
+        super().breath()
+        print("i am a progrMERE so i ma breathing ++")
+
+
+
+
+pr=Programmer()
+pr.breath()
+output ####
+im initialinzing Programmer
+i am a person so i ma breathing
+i am an Employee so i am also breathing
+i am a progrMERE so i ma breathing ++
