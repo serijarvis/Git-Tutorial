@@ -1,0 +1,51 @@
+class Train:
+    def __init__(self,name,fare,seats):
+        self.name=name
+        self.fare=fare
+        self.seats=seats
+    def printdeatails(self):
+        print(f"the train name is {self.name} and fare is {self.fare} and the availabity of seats is {self.seats}")
+
+intercity=Train("intercity",340,500)
+rajdhani=Train("rajdhani",590,800)
+
+print(intercity.printdeatails())
+rajdhani.printdeatails()
+
+
+
+@@@
+class Train:
+    def __init__(self,name,fare,seats):
+        self.name=name
+        self.fare=fare
+        self.seats=seats
+    def printdeatails(self):
+        print(f"the train name is {self.name}" )
+        print(f"the fare of the train is {self.fare}")
+intercity=Train("intercity:12304",340,500)
+
+
+intercity.printdeatails()
+class Train:
+    def __init__(self,name,fare,seats):
+        self.name=name
+        self.fare=fare
+        self.seats=seats
+    def printdeatails(self):
+        print(f"the train name is {self.name}" )
+
+    def fareinfo(self):
+        print(f"the fare of the train is {self.fare}")
+intercity=Train("intercity:12304",340,500)
+
+
+intercity.printdeatails()
+intercity.fareinfo()
+print(intercity.printdeatails())
+
+
+
+
+
+
