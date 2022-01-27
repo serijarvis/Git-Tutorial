@@ -1,0 +1,29 @@
+sample log file
+with open("log.txt") as f:
+    content=f.read().lower()
+if 'python' in content:
+    print("yes! python is present")
+else:
+    print("python is not present")
+    
+    
+    
+content=True
+i=1
+with open("log.txt") as f:
+    while content:
+        content = f.readline()
+        if 'python' in content.lower():
+            print(content)
+            print("yes its present ")
+            print(i)
+        i+=1
+        
+        
+        
+        ###copy a txt filr yto another one
+        
+        with open("that.txt") as f:
+  content=f.read()
+with open("copy.txt",'w') as f:
+    f.write(content)
