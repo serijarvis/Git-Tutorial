@@ -1,0 +1,78 @@
+def make_amount(rupees_to_make,no_of_five,no_of_one):
+
+   five_needed=0
+
+   one_needed=0
+
+       
+
+   five_needed = int(rupees_to_make / 5)
+
+   one_needed = rupees_to_make % 5
+
+   if (five_needed <= no_of_five and one_needed <= no_of_one):
+
+       print(“No. of Five needed :”, five_needed)
+
+       print(“No. of One needed  :”, one_needed)
+
+   else:
+
+       print(-1)
+
+make_amount(28,8,5)
+@###@@###########################################
+PF-Assgn-19
+
+def calculate_bill_amount(food_type,quantity_ordered,distance_in_kms):
+    bill_amount=0
+    #write your logic here
+    if((food_type=="N" or food_type=="V")and quantity_ordered>=1 and distance_in_kms>0):
+        if(food_type=="V"):
+            if(distance_in_kms<=3):
+                bill_amount=120*quantity_ordered+0
+            elif(distance_in_kms>3 and distance_in_kms<=6):
+                bill_amount=120*quantity_ordered+((distance_in_kms-3)*3)
+            else:
+                bill_amount=120*quantity_ordered+((distance_in_kms-6)*6)+9
+        else:
+            if(distance_in_kms<=3):
+                bill_amount=150*quantity_ordered+0
+            elif(distance_in_kms>3 and distance_in_kms<=6):
+                bill_amount=150*quantity_ordered+((distance_in_kms-3)*3)
+            else:
+                bill_amount=150*quantity_ordered+((distance_in_kms-6)*6)+9
+    else:
+        bill_amount=(-1)
+    return bill_amount
+
+#Provide different values for food_type,quantity_ordered,distance_in_kms and test your program
+bill_amount=calculate_bill_amount("V",1,7)
+print(bill_amount)
+@##################
+def solve(heads,legs):
+    error_msg="No solution"
+    chicken_count=0
+    rabbit_count=0
+    
+    if(heads>=legs):
+        print(error_msg)
+    elif(legs%2!=0):
+        print(error_msg)
+    else:
+        rabbit_count=(legs-2*heads)/2
+        chicken_count=heads-rabbit_count
+        print(int(chicken_count),int(rabbit_count))
+    #Start writing your code here
+    #Populate the variables: chicken_count and rabbit_count
+
+
+
+    # Use the below given print statements to display the output
+    # Also, do not modify them for verification to work
+
+    #print(chicken_count,rabbit_count)
+    #print(error_msg)
+
+#Provide different values for heads and legs and test your program
+solve(38,131)
