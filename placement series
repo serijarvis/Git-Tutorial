@@ -1,0 +1,149 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,arr[10];
+    cout<<"enter 10 elements of the array";
+    for(int i=0;i<10;i++)
+    cin>>arr[i];
+    int sum=0;
+    for(int i=0;i<10;i++)
+    sum=sum+arr[i];
+    cout<<"the sum of the array is"<<sum;
+    return 0;
+}
+####print max or min element in the array
+import numpy
+arr=numpy.array([1,2,3,4,5])
+max_element=numpy.max(arr)
+min_element=numpy.min(arr)
+print("the maximumu min_element",max_element)
+print("the min elemnt is ",min_element)
+
+##### reverse the array
+// Iterative C++ program to reverse an array
+#include <bits/stdc++.h>
+using namespace std;
+
+/* Function to reverse arr[] from start to end*/
+void rvereseArray(int arr[], int start, int end)
+{
+	while (start<end)
+	{
+		int temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
+		start++;
+		end--;
+	}
+}	
+
+/* Utility function to print an array */
+void printArray(int arr[], int size)
+{
+for (int i = 0; i < size; i++)
+cout << arr[i] << " ";
+
+cout << endl;
+}
+
+/* Driver function to test above functions */
+int main()
+{
+	int arr[] = {1, 2, 13, 4, 5, 6};
+	
+	int n = sizeof(arr) / sizeof(arr[0]);
+
+	// To print original array
+	printArray(arr, n);
+	
+	// Function calling
+	rvereseArray(arr, 0, n-1);
+	
+	cout << "Reversed array is" << endl;
+	
+	// To print the Reversed array
+	printArray(arr, n);
+	
+	return 0;
+}
+@#@#@###$@$#$#$##@$@
+def reversearray(A,start,end):
+    while start<end:
+        A[start],A[end]=A[end],A[start]
+        start+=1 
+        end-=1
+
+A=[1,6,8,2,7,9,45,23,4,55]
+print(A)
+print(len(A))
+reversearray(A,0,9)
+# print(reversearray)
+print(A)
+
+output::
+ddef reversearray(A,start,end):
+    while start<end:
+        A[start],A[end]=A[end],A[start]
+        start+=1 
+        end-=1
+
+A=[1,6,8,2,7,9,45,23,4,55]
+print(A)
+print(len(A))
+reversearray(A,0,9)
+# print(reversearray)
+print(A)
+
+@#@#sort an array
+A=[-1,0,9,15,7,8,3]
+A.sort()
+print(A
+
+@#@ count no of n in array:
+def frequency(a,x):
+    count=0
+    for i in a:
+        if i==x:
+            count+=1 
+    return count
+a = [0, 5, 5, 5, 4]
+x = 5
+print(frequency(a, x))
+
+
+
+@@#@#sare minus ko ek taraf or sareplus ko ek taraf
+v# A Python 3 program to put
+# all negative numbers before
+# positive numbers
+
+def rearrange(arr, n ) :
+
+	# Please refer partition() in
+	# below post
+	# https://www.geeksforgeeks.org / quick-sort / j = 0
+	j = 0
+	for i in range(0, n) :
+		if (arr[i] < 0) :
+			temp = arr[i]
+			arr[i] = arr[j]
+			arr[j]= temp
+			j = j + 1
+	print(arr)
+
+# Driver code
+arr = [-1, 2,-9, -3, 4, 5, 6, -7, 8, 9]
+n = len(arr)
+rearrange(arr, n)
+####problem statement 10
+Range of the given function
+import numpy
+arr=numpy.array([-1,-3,3,47,21,91])
+max_element=numpy.max(arr)
+min_element=numpy.min(arr)
+print("the maximumu min_element",max_element)
+print("the min elemnt is ",min_element)
+range=(max_element-min_element)
+print("so the range of the given program is ",range)
