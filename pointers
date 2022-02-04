@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int x=90;
+   int *ptr;
+   ptr=&x;
+   cout<<ptr<<endl;
+   cout<<*ptr<<endl;
+   cout<<**ptr<<endl;
+}
+
+
+@#$%@#$%
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int x=900;
+   int *ptr=&x;
+   cout<<ptr<<endl;
+   cout<<*ptr<<endl;
+}
+@#@#@#
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a[]={1,2,4,66};
+   int *ptr;
+   int *ptr1;
+   ptr=a;
+   ptr1=&a[0];
+   cout<<ptr<<endl;
+   cout<<ptr1<<endl;
+   cout<<*ptr<<endl;
+   cout<<*ptr1<<endl;
+  
+}
+output&%&&
+)XADSD
+ADGFGH
+1
+1
+
