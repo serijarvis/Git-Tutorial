@@ -1,0 +1,278 @@
+#include<iostream>
+using namespace std;
+struct node{
+    int data;
+    node *next;
+};
+
+
+void printlist(node *n){
+    int count=0;
+    while(n!=NULL){
+        cout<<n->data<<endl;
+        n=n->next;
+        count++;
+    }
+    cout<<"the no of elements in the given linked list is"<<count<<endl;
+}
+int main(){
+    node *head=new node();
+    node *second=new node();
+    node *third=new node();
+    node *fourth=new node();
+    node *fifth=new node();
+    node *sixth=new node();
+    node *seventh=new node();
+    node *eight=new node();
+    
+    
+    head->data=9;
+    head->next=second;
+    
+    second->data=12;
+    second->next=third;
+    
+    third->data=13;
+    third->next=fourth;
+    
+    fourth->data=11;
+    fourth->next=fifth;
+    
+    fifth->data=110;
+    fifth->next=sixth;
+    
+    sixth->data=1101;
+    sixth->next=seventh;
+    
+    seventh->data=8;
+    seventh->next=eight;
+    
+    eight->data=23;
+    eight->next=NULL;
+    printlist(head);
+
+    
+}
+
+@#@#@# print only 5tak
+#include<iostream>
+using namespace std;
+struct node{
+    int data;
+    node *next;
+};
+
+
+void printlist(node *n){
+    int count=0;
+    while(n!=NULL){
+        cout<<n->data<<endl;
+        n=n->next;
+        count++;
+    }
+    cout<<"the no of elements in the given linked list is"<<count<<endl;
+}
+int main(){
+    node *head=new node();
+    node *second=new node();
+    node *third=new node();
+    node *fourth=new node();
+    node *fifth=new node();
+    node *sixth=new node();
+    node *seventh=new node();
+    node *eight=new node();
+    
+    
+    head->data=9;
+    head->next=second;
+    
+    second->data=12;
+    second->next=third;
+    
+    third->data=13;
+    third->next=fourth;
+    
+    fourth->data=11;
+    fourth->next=fifth;
+    
+    fifth->data=110;
+    fifth->next=sixth;
+    
+    sixth->data=1101;
+    sixth->next=seventh;
+    
+    seventh->data=8;
+    seventh->next=eight;
+    
+    eight->data=23;
+    eight->next=NULL;
+    // printlist(head);
+    node *start=head;
+    for(int i=0;i<5;i++)
+    {
+        cout<<start->data<<endl;
+        start=start->next;
+    }
+    
+    
+    
+    
+}
+
+
+@#$#$middle element in the list
+#include<iostream>
+using namespace std;
+struct node{
+    int data;
+    node *next;
+};
+
+
+void printlist(node *n){
+    int count=0;
+    while(n!=NULL){
+        cout<<n->data<<endl;
+        n=n->next;
+        count++;
+    }
+    cout<<"the no of elements in the given linked list is"<<count<<endl;
+}
+void printMiddleElement(node *head){
+    node *slow_ptr=head;
+    node *fast_ptr=head;
+    if(head!=NULL){
+        while(fast_ptr!=NULL && fast_ptr->data!=NULL){
+            fast_ptr=fast_ptr->next->next;
+            slow_ptr=slow_ptr->next;
+        }
+        cout<<"the middlle element is "<<slow_ptr->data<<endl;
+    }
+}
+int main(){
+    node *head=new node();
+    node *second=new node();
+    node *third=new node();
+    node *fourth=new node();
+    node *fifth=new node();
+    node *sixth=new node();
+    node *seventh=new node();
+    node *eight=new node();
+    
+    
+    head->data=9;
+    head->next=second;
+    
+    second->data=12;
+    second->next=third;
+    
+    third->data=13;
+    third->next=fourth;
+    
+    fourth->data=11;
+    fourth->next=fifth;
+    
+    fifth->data=110;
+    fifth->next=sixth;
+    
+    sixth->data=1101;
+    sixth->next=seventh;
+    
+    seventh->data=8;
+    seventh->next=eight;
+    
+    eight->data=23;
+    eight->next=NULL;
+    printlist(head);
+    printMiddleElement(head);
+    
+    
+    
+    
+    
+}
+
+
+@#$%print(circulrR LINKED LIST
+#include<iostream>
+using namespace std;
+struct node{
+    int data;
+    node *next;
+};
+
+
+// void printlist(node *n){
+//     int count=0;
+//     while(n!=head){
+//         cout<<n->data<<endl;
+//         n=n->next;
+//         count++;
+//     }
+//     cout<<"the no of elements in the given linked list is"<<count<<endl;
+// }
+void printcircularlist(node *second){
+    node *temp=second;
+    if(second!=NULL)
+    {       cout<<temp->data<<endl;
+            temp=temp->next;
+        while(temp!=second){
+            cout<<temp->data<<endl;
+            temp=temp->next;
+        }
+    }
+}
+// void printMiddleElement(node *head){
+//     node *slow_ptr=head;
+//     node *fast_ptr=head;
+//     if(head!=NULL){
+//         while(fast_ptr!=NULL && fast_ptr->data!=NULL){
+//             fast_ptr=fast_ptr->next->next;
+//             slow_ptr=slow_ptr->next;
+//         }
+//         cout<<"the middlle element is "<<slow_ptr->data<<endl;
+//     }
+// }
+int main(){
+    node *head=new node();
+    node *second=new node();
+    node *third=new node();
+    node *fourth=new node();
+    node *fifth=new node();
+    node *sixth=new node();
+    node *seventh=new node();
+    node *eight=new node();
+    
+    
+    head->data=9;
+    head->next=second;
+    
+    second->data=12;
+    second->next=third;
+    
+    third->data=13;
+    third->next=fourth;
+    
+    fourth->data=11;
+    fourth->next=fifth;
+    
+    fifth->data=110;
+    fifth->next=sixth;
+    
+    sixth->data=1101;
+    sixth->next=seventh;
+    
+    seventh->data=8;
+    seventh->next=eight;
+    
+    eight->data=23;
+    eight->next=head;
+    // printlist(head);
+    // printMiddleElement(head);
+    printcircularlist(head);
+    
+    
+    
+    
+    
+}
