@@ -1,0 +1,271 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string s(5,'%');
+    string r(10,'#');
+    cout<<s<<endl;
+    cout<<r<<endl;
+}
+
+@#$%#@#$%string operations
+#include<iostream>
+using namespace std;
+int main(){
+    string s("geeks of geeks");
+    cout<<s<<endl;
+    cout<<s.length()<<endl;
+    
+}
+234567654323
+#include<iostream>
+using namespace std;
+int main(){
+    string s1("geeks of geeks");
+    string s2("im yiur hero");
+    s1.append(s2);
+    cout<<s1<<endl;
+    
+    
+    
+}
+34323452223@#$@#$
+#include<iostream>
+using namespace std;
+int main(){
+    string s1("geeks of geeks");
+    string s2("im yiur hero");
+    s1.append(s2);
+    cout<<s1<<endl;
+    string s3=s1.substr(0,5);
+    cout<<s3<<endl;
+    
+    
+    
+}
+@#$%@#$
+#include<iostream>
+using namespace std;
+int main(){
+    string s("geeksofgeeks");
+    s.erase(3,3);
+    cout<<s<<endl;
+
+}
+@#$%^ptint all chracrscters
+#include<iostream>
+using namespace std;
+int main(){
+    string str;
+    getline(cin,str);
+    cout<<str<<endl;
+}
+@#$%append function 
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="fam";
+    string s2="ily";
+    s1.append(s2);
+    cout<<s1<<endl;
+}
+@#$append 
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="fam";
+    string s2="ily";
+    s2.append(s1);
+    cout<<s1<<endl;
+    cout<<s2<<endl;
+}
+@#$%append
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="fam";
+    string s2="ily";
+    // s2.append(s1);
+    // cout<<s1<<endl;
+    // cout<<s2<<endl;
+    cout<<s1+s2<<endl;
+}2345
+
+@#$%clear 
+function
+#include<iostream>
+using namespace std;
+int main(){
+    string abc="tykewfj nscbjhsef hjbhbjed";
+    cout<<abc;
+    abc.clear();
+    cout<<abc;
+}
+
+23456!@#$%@##compare function 
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abc";
+    string s2="xyz";
+    cout<<s2.compare(s1)<<endl;
+    cout<<s1.compare(s2)<<endl;
+}
+23456$$%%compare function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abc";
+    string s2="abc";
+    cout<<s2.compare(s1)<<endl;
+    cout<<s1.compare(s2)<<endl;
+}
+#$%$$%%%strings are equal
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abc";
+    string s2="abc";
+    if(s2.compare(s1)==0)
+    cout<<"strings are equal"<<endl;
+    cout<<s2.compare(s1)<<endl;
+    cout<<s1.compare(s2)<<endl;
+    cout<<"strings are equal"<<endl;
+}
+
+2#$%^45555E
+Empty function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abc";
+    cout<<s1<<endl;
+    s1.clear();
+    if(s1.empty())
+    cout<<"string are empty"<<endl;
+}
+
+@#$%^EMPTY
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abc";
+    cout<<s1<<endl;
+    s1.clear();
+    if(!s1.empty())
+    cout<<"string are empty"<<endl;
+}
+@#$@#$erase function 
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abcxyzabc";
+    s1.erase(3,3);
+    s1.erase(3,2);
+    cout<<s1<<endl;
+    
+}
+
+2333@#$@#find function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="abcxyzabc";
+    cout<<s1.find("xyz")<<endl;
+    
+}
+@#$@#$find function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="nincompoop";
+    cout<<s1.find("poop")<<endl;
+    cout<<s1.find("p")<<endl;
+    cout<<s1.find("TRUE")<<endl;
+    
+}
+@#$#@#$insert function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="nincompoop";
+    s1.insert(3,"LOL");
+    cout<<s1<<endl;
+    
+}
+@@##$length function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="nincompoop";
+    cout<<s1.length()<<endl;
+    
+}
+
+@#@####iterate function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="nincompoop";
+    for(int i=0;i<s1.length();i++){
+        cout<<s1[i]<<endl;
+    }
+    
+}
+
+@#@#@#substr
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="nincompoop";
+    string s=s1.substr(6,4);
+    cout<<s<<endl;
+    
+}
+
+@#@## stoi function
+#include<iostream>
+using namespace std;
+int main(){
+    string s1="786";
+    int x=stoi(s1);
+    cout<<x+2<<endl;
+    
+    
+}
+
+@#@#integer to strings
+#include<iostream>
+using namespace std;
+int main(){
+    int x=786;
+    cout<<to_string(x)+"2"<<endl;
+    
+    
+}
+
+@#$@#@##@# sorting a string 
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s="ygecmlkkoiwqsawaaczdrroj";
+    sort(s.begin(),s.end());
+    cout<<s<<endl;
+    
+    
+}
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    string s="ygecmlkkoiwqs3456789awaaczdrroj";
+    sort(s.begin(),s.end());
+    cout<<s<<endl;
+    
+    
+}
+
+
+
+
