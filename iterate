@@ -1,0 +1,196 @@
+
+#include <iostream>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+    vector <int> v;
+    v.push_back(10);
+    v.push_back(20);
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    
+
+    return 0;
+}
+3433#$##$##
+#include <iostream>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+    vector <int> v;
+    v.push_back(10);
+    v.push_back(20);
+    cout<<v.size()<<endl;
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    for(int i=0;i<v.size();i++)
+    cout<<v[i]<<endl;
+    
+
+    return 0;
+}
+@#$max_size can be stored in var
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+}
+#$##insert function
+include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    v.insert(v.begin(),-3);
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+}
+@#
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    v.insert(v.begin(),-3);
+     v.insert(v.begin()+3,-3);
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+}
+##erase
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    v.insert(v.begin(),-3);
+     v.insert(v.begin()+3,-3);
+     v.erase(v.begin());
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+}
+
+
+V1 or v2 vectot!@#$%#
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    v.insert(v.begin(),-3);
+     v.insert(v.begin()+3,-3);
+     v.erase(v.begin());
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+    
+    
+    
+    vector <int> v1,v2;
+    v1.push_back(90);
+    v1.push_back(80);
+    v2.push_back(34);
+    v2.push_back(99);
+    for(auto it=v1.begin();it!=v1.end();it++)
+    cout<<*it<<endl;
+    for(auto it=v2.begin();it!=v2.end();it++)
+    cout<<*it<<endl;
+    
+}
+#%%#$clear function
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector <int> v;
+    v.assign(5,19);
+    v.push_back(10);
+    v.push_back(20);
+    // v.assign(5,2);
+    // auto<<v.size()<<endl;
+    v.insert(v.begin(),-3);
+     v.insert(v.begin()+3,-3);
+     v.erase(v.begin());
+    for(auto it=v.begin();it!=v.end();it++)
+    cout<<*it<<endl;
+    cout<<"vector is empty or not"<<v.empty()<<endl;
+    cout<<"the ,mamxin can be tore in "<<v.max_size()<<endl;
+    
+    
+    
+    vector <int> v1,v2;
+    v1.push_back(90);
+    v1.push_back(80);
+    v2.push_back(34);
+    v2.push_back(99);
+    v1.swap(v2);
+    v1.clear();
+    v2.clear();
+    for(auto it=v1.begin();it!=v1.end();it++)
+    cout<<*it<<endl;
+    for(auto it=v2.begin();it!=v2.end();it++)
+    cout<<*it<<endl;
+    
+}
