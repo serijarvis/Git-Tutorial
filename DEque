@@ -1,0 +1,192 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include<deque> 
+
+using namespace std;
+void showdetails(deque <int> q){
+    deque <int> :: iterator it;
+    for(it=q.begin();it!=q.end();it++){
+        cout<<*it<<endl;
+    }
+    cout<<endl;
+}
+
+int main()
+{
+    deque <int> dq;
+    dq.push_back(12);
+    dq.push_front(90);
+    dq.push_back(19);
+    dq.push_front(99);
+    dq.push_back(113);
+    dq.push_front(900);
+    cout<<"Hello World";
+    showdetails(dq);
+    cout<<"size of deque is"<<dq.size()<<endl;
+    cout<<"size of deque is"<<dq.max_size()<<endl;
+    cout<<dq.at(1)<<endl;
+    cout<<dq.front()<<endl;
+    cout<<dq.back()<<endl;
+    dq.pop_back();
+    showdetails(dq);
+    dq.pop_front();
+    showdetails(dq);
+
+    return 0;
+}
+!@#$%
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+void showpriorityqueue(priority_queue<int> pq){
+    priority_queue <int> q=pq;
+    while(!q.empty()){
+        cout<<q.top()<<endl;
+        q.pop();
+    }
+    cout<<endl;
+}
+
+int main(){
+    priority_queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(5);
+    showpriorityqueue(q);
+    
+}
+@#$@#$
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+void showpriorityqueue(priority_queue<int> pq){
+    priority_queue <int> q=pq;
+    while(!q.empty()){
+        cout<<q.top()<<endl;
+        q.pop();
+    }
+    cout<<endl;
+}
+
+int main(){
+    priority_queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(5);
+    q.push(900);
+    showpriorityqueue(q);
+    cout<<q.size()<<endl;
+    q.pop();
+    q.pop();
+    showpriorityqueue(q);
+    
+    
+}
+#$%#$
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+int main(){
+    pair <int,char> PAIR1;
+    PAIR1.first=100;
+    PAIR1.second='g';
+    cout<<PAIR1.first<<" "<<PAIR1.second<<endl;
+    pair <string,double> PAIR2("prince",98.8);
+    cout<<PAIR2.first<<" "<<PAIR2.second<<endl;
+    pair <string,double> PAIR3;
+    PAIR3=make_pair("krishna",900);
+    cout<<PAIR3.first<<" "<<PAIR3.second<<endl;
+    
+    
+    
+    
+}
+#$%
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+int main(){
+    pair <int,char> PAIR1;
+    PAIR1.first=100;
+    PAIR1.second='g';
+    cout<<PAIR1.first<<" "<<PAIR1.second<<endl;
+    pair <string,double> PAIR2("prince",98.8);
+    cout<<PAIR2.first<<" "<<PAIR2.second<<endl;
+    pair <string,double> PAIR3;
+    PAIR3=make_pair("krishna",900);
+    cout<<PAIR3.first<<" "<<PAIR3.second<<endl;
+    pair <int,int> pair1=make_pair(1,90);
+    pair <int,int> pair2=make_pair(19,9);
+    cout<<pair2.first<<" "<<pair2.second<<endl;
+
+}
+
+2345@###
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+int main(){
+    pair <int,char> PAIR1;
+    PAIR1.first=100;
+    PAIR1.second='g';
+    cout<<PAIR1.first<<" "<<PAIR1.second<<endl;
+    pair <string,double> PAIR2("prince",98.8);
+    cout<<PAIR2.first<<" "<<PAIR2.second<<endl;
+    pair <string,double> PAIR3;
+    PAIR3=make_pair("krishna",900);
+    cout<<PAIR3.first<<" "<<PAIR3.second<<endl;
+    pair <int,int> pair1=make_pair(1,90);
+    pair <int,int> pair2=make_pair(19,9);
+    
+    cout<<pair2.first<<" "<<pair2.second<<endl;
+    pair <int,int> pair3(pair2);
+    cout<<pair3.first<<" "<<pair3.second<<endl;
+
+}
+
+
+pair ing 
+#include<iostream>
+#include<queue> 
+using namespace std;
+
+int main(){
+    pair <int,char> PAIR1;
+    PAIR1.first=100;
+    PAIR1.second='g';
+    cout<<PAIR1.first<<" "<<PAIR1.second<<endl;
+    pair <string,double> PAIR2("prince",98.8);
+    cout<<PAIR2.first<<" "<<PAIR2.second<<endl;
+    pair <string,double> PAIR3;
+    PAIR3=make_pair("krishna",900);
+    cout<<PAIR3.first<<" "<<PAIR3.second<<endl;
+    pair <int,int> pair1=make_pair(1,90);
+    pair <int,int> pair2=make_pair(19,9);
+    
+    cout<<pair2.first<<" "<<pair2.second<<endl;
+    pair <int,int> pair3(pair2);
+    cout<<pair3.first<<" "<<pair3.second<<endl;
+    cout<<(pair1==pair2)<<endl;
+    cout<<(pair1!=pair2)<<endl;
+    cout<<(pair1>=pair2)<<endl;
+    cout<<(pair1<=pair2)<<endl;
+    pair1.swap(pair2);
+    cout<<pair1.first<<" "<<pair1.second<<endl;
+    cout<<pair2.first<<" "<<pair2.second<<endl;
+    cout<<pair1.first<<" "<<pair2.second<<endl;
+    cout<<pair2.first<<" "<<pair1.second<<endl;
+    
+
+}
